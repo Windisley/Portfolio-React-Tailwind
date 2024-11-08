@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/poppins/Poppins-Regular.ttf") format(opentype);
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("./fonts/poppins/Poppins-Bold.ttf") format(opentype);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins-italic";
+  src: url("./fonts/poppins/Poppins-Italic.ttf") format(opentype);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins-semibold";
+  src: url("./fonts/poppins/Poppins-SemiBold.ttf") format(opentype);
+  font-style: normal;
+  font-display: swap;
+}
