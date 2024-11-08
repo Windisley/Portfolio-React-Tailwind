@@ -26,8 +26,23 @@ export default {
 
       },
       translate:{
-        y5: "-5px"
+        y5: "-5px",
+        centralizeXY: "-50%, -50%",
+        centralizeEixo: "-50%"
+      },
+      screens: {
+        'sm': '700px',
+  
+        'md': '960px',
+  
+        'lg': '1440px',
+
+      },
+      boxShadow:{
+        shadowligth: "0px 0px 5px 0 #F5D575",
+        shadowdark: " 0 0 10px 0 #EDB816"
       }
+    
 
     },
   },
