@@ -28,7 +28,7 @@ const Header = () => {
             ">
                 <ul className={`${
                     window.innerWidth <= 700 ? "translate-x-full absolute flex-col items-center justify-center w-2/4 h-dvh" : ""} 
-                    ${activemenu && window.innerWidth <= 700 ? "translate-x-full absolute top-20  right-0" : "left-0"} 
+                    ${activemenu && window.innerWidth <= 700 ? "translate-x-full absolute top-20  right-0 hidden" : "left-0 flex"} 
                     flex gap-6 items-center bg-secundary 
                     `}
                 >
