@@ -11,7 +11,10 @@ function App() {
          <main className="
           w-full h-full
          ">
-          <Home/>
+          
+          <div className="w-full h-full">
+           <Home/>
+          </div>
 
 
          </main>

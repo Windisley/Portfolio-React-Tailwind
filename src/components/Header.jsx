@@ -34,7 +34,7 @@ const Header = () => {
                 >
                     <li className="
                      text-primary capitalize font-poppins
-                     hover:translate-y-y5 duration-300 ease-out
+                     hover:translate-y-y5  duration-300 ease-out
                     ">
                         <a href="#">
 
@@ -43,7 +43,7 @@ const Header = () => {
                     </li>
                     <li className="
                      text-primary capitalize font-poppins
-                     hover:translate-y-y5 duration-300 ease-out
+                     hover:translate-y-y5  duration-300 ease-out
                     ">
                         <a href="#">
 
@@ -52,7 +52,7 @@ const Header = () => {
                     </li>
                     <li className="
                      text-primary capitalize font-poppins
-                     hover:translate-y-y5 duration-300 ease-out
+                     hover:translate-y-y5  duration-300 ease-out
                     ">
                         <a href="#">
                             habilidades
@@ -61,7 +61,7 @@ const Header = () => {
                     </li>
                     <li className="
                      text-primary capitalize font-poppins
-                     hover:translate-y-y5 duration-300 ease-out
+                     hover:translate-y-y5  duration-300 ease-out
                     ">
                         <a href="#">
                             projetos
