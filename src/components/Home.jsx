@@ -11,8 +11,8 @@ const Home = () => {
   const Canvas = useRef()
   const boxCanvas = useRef()
 
-  useEffect(()=>{
-    
+   useEffect(()=>{
+
     const canvas = Canvas.current
     const containCanvas = boxCanvas.current
     const ctx = canvas.getContext("2d")
@@ -25,7 +25,7 @@ const Home = () => {
       screenX: canvas.width / 2,
       screenY: canvas.height /2,
       objects: (canvas.height /2) / 2,
-      person:  0
+      person: 1,
     }
 
     const positionElements = canvas.width / 3
@@ -39,7 +39,7 @@ const Home = () => {
     
     
     const loadImages = async ()=>{
-      ctx.clearRect(0,0,canvas.width,canvas.height)
+     
       const book = new Image()
       const computer = new Image()
       const human = new Image()
@@ -60,23 +60,38 @@ const Home = () => {
         book.onload = resolve
       }),
 
-
-      ])
-
       
-      
-        ctx.drawImage(human,screenElements.person,screenElements.screenY,200,200)
+    ])
     
-        ctx.drawImage(computer,divisionElements.one,screenElements.objects,80,80)
-    
-        ctx.drawImage(book,divisionElements.tow,screenElements.objects,80,80) 
-
-      
+    class Animation{
+      constructor(ctx){
+        this.ctx = ctx
+       
+        
+       this.drawAnimation()
       }
-      loadImages()
-      requestAnimationFrame(loadImages)
+
+      drawAnimation(){
+        
+        this.ctx.clearRect(0,0,canvas.width,canvas.height)
+        screenElements.person += 2
+        this.ctx.drawImage(human,30,33,30,30,screenElements.person,screenElements.screenY,50,50)
+        this.ctx.drawImage(computer,divisionElements.one,screenElements.objects,80,80)
+        this.ctx.drawImage(book,divisionElements.tow,screenElements.objects,80,80) 
+        if(screenElements.person > canvas.width){
+          screenElements.person = 0
+        }
+        requestAnimationFrame(()=>this.drawAnimation())
+        
+      }
+    }
+    const classCanva = new Animation(ctx)
+    
+  }
+  loadImages()
    
   }, [])
+
 
   return (
     <div className="
