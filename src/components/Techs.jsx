@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { DiJavascript } from "react-icons/di";
@@ -9,23 +9,41 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
+
 const Techs = ()=>{
+    const [animationshow, setAnimatioShow] = useState(true)
     const carroselTechs = useRef()
-    useEffect(()=>{
-     let count = -1000
-      const carrosel = carroselTechs.current
-      setInterval(()=>{
-          count++
-          carrosel.style.transform = `translateX(${-count}px)`
+   useEffect(()=>{
+    if(animationshow){
+        const carrosel = carroselTechs.current
+        let count = -1400
+        
+          let animationCarrosel = setInterval(()=>{
+              count+=2
+              carrosel.style.transform = `translateX(${-count}px)`
+              
+              if(count > window.innerWidth){
+                const firstChild = carrosel.children[0].cloneNode(true);
+                carrosel.appendChild(firstChild);
+                carrosel.removeChild(carrosel.children[0]);
+                count = -1400
+              } 
+          }, 10)
+
           
-          if(count > window.innerWidth){
-            carrosel.appendChild(carrosel.children[0])
-            count = -1000
-          }
-      }, 5)
+          return ()=>{clearInterval(animationCarrosel) } 
+          
+        }
+    }, [animationshow])
+    
+    function stopAnimation(){
+        setAnimatioShow(false)
+    }
 
+    function startAnimation(){
+        setAnimatioShow(true)
+    }
 
-    }, [])
     return(
         <section className="
           w-full min-h-full m-marginceltralize
@@ -44,9 +62,11 @@ const Techs = ()=>{
            
          ">
             <div className="
-             w-full h-full  flex gap-8 relative 
+             max-w-full h-full  flex gap-8 relative 
              p-8  justify-end items-center  ease-out
-            " ref={carroselTechs}>
+            " ref={carroselTechs} onMouseEnter={stopAnimation} 
+             onMouseLeave={startAnimation}
+            >
          
             <div className="
                 flex flex-col items-center justify-center 

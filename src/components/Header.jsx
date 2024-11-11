@@ -13,7 +13,10 @@ const Header = () => {
     return (
         
 
-        <header className="w-full min-h-full  bg-secundary flex justify-center">
+        <header className="
+        w-full  bg-secundary flex justify-center
+        fixed top-0 z-30
+        ">
             
             <div className=" w-full h-full py-8 max-w-contain flex items-center 
             justify-between px-4" >

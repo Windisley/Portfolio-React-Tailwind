@@ -4,7 +4,7 @@ const About = ()=>{
     return(
         <section className="
         w-full min-h-dvh flex justify-center
-        items-center bg-secundary
+        items-center border-t border-text
         ">
             <div className="
              max-w-contain h-full p-4 flex
@@ -13,8 +13,8 @@ const About = ()=>{
             ">  
                 <div className="
                 w-72 min-w-40 h-72 min-h-40 rounded-full border-2 
-                 border-primarydark bg-primary flex justify-center items-center
-                 relative overflow-hidden shadow-shadowdark 
+                 border-secundary bg-primary flex justify-center items-center
+                 relative overflow-hidden shadow-shadowligth
                 ">
                     <img src={foto34} alt="Minha Foto" className="
                       absolute left-2/4 top-2/4
@@ -29,13 +29,13 @@ const About = ()=>{
                  items-center  moba:my-8 moba:w-full
                 ">
                     <h2 className="
-                     text-center font-poppins-semibold text-xl text-primary capitalize
+                     text-center font-poppins-semibold text-xl text-text capitalize
                     ">
                         Sobre mim
                     </h2>
 
                     <p className="
-                     text-left w-full font-poppins text-primary capitalize
+                     text-left w-full font-poppins text-text capitalize
                     ">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ducimus est, cupiditate 
                         perspiciatis optio possimus corrupti recusandae perferendis odit doloremque fugiat aperiam deserunt! 

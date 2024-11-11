@@ -1,9 +1,14 @@
 import About from "./components/About"
 import Header from "./components/Header"
 import Home from "./components/Home"
+import Projects from "./components/Projects"
 import Techs from "./components/Techs"
 
 function App() {
+
+    
+    console.log(window.scrollY)
+
 
   return (
      
@@ -25,6 +30,10 @@ function App() {
 
           <div>
             <Techs/>
+          </div>
+
+          <div>
+            <Projects/>
           </div>
 
 
