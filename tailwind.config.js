@@ -12,7 +12,8 @@ export default {
         primaryligth: "#F5D575",
         primarydark: "#EDB816",
         secundary: "#05000d",
-        text: "#2E2A20"
+        text: "#2E2A20",
+        gray: "#ccc"
       },
       maxWidth:{
         contain: "1500px"
@@ -31,11 +32,13 @@ export default {
         centralizeEixo: "-50%"
       },
       screens: {
-        'sm': '700px',
+        "moba": "300px",
+
+        'tablet': '600px',
   
-        'md': '960px',
+        'desktop': '960px',
   
-        'lg': '1440px',
+        'desktopxl': '1160px',
 
       },
       boxShadow:{
