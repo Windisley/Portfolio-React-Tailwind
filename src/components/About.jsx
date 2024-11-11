@@ -9,12 +9,12 @@ const About = ()=>{
             <div className="
              max-w-contain h-full p-4 flex
              justify-between items-center gap-4
-
+             moba:flex-col desktop:flex-row
             ">  
                 <div className="
                 w-72 min-w-40 h-72 min-h-40 rounded-full border-2 
                  border-primarydark bg-primary flex justify-center items-center
-                 relative overflow-hidden shadow-shadowdark
+                 relative overflow-hidden shadow-shadowdark 
                 ">
                     <img src={foto34} alt="Minha Foto" className="
                       absolute left-2/4 top-2/4
@@ -25,8 +25,8 @@ const About = ()=>{
                     "/>
                 </div>
                 <div className="
-                 w-2/4 h-full flex flex-col gap-4 justify-center
-                 items-center
+                 desktop:w-2/4 h-full flex flex-col gap-4 justify-center
+                 items-center  moba:my-8 moba:w-full
                 ">
                     <h2 className="
                      text-center font-poppins-semibold text-xl text-primary capitalize
