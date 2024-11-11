@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Header from "./components/Header"
 import Home from "./components/Home"
 
@@ -16,6 +17,12 @@ function App() {
           <div className="w-full h-full">
            <Home/>
           </div>
+
+          <div className="w-full h-full">
+            <About/> 
+          </div>
+
+
 
 
          </main>

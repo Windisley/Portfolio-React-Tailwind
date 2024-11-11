@@ -19,6 +19,7 @@ const Home = () => {
 
     canvas.width = containCanvas.offsetWidth;
     canvas.height = containCanvas.offsetHeight;
+    
 
     const screenElements = {
       screenX: canvas.width / 2,
@@ -34,6 +35,8 @@ const Home = () => {
       one: positionElements,
       two: positionElements * 2,
     };
+
+    let animationId;
 
     const loadImages = async () => {
       const book = new Image();
@@ -134,22 +137,27 @@ const Home = () => {
    
           
       
-          requestAnimationFrame(this.DrawAnimation);
+        animationId =  requestAnimationFrame(this.DrawAnimation);
+          
         };
+
       }
 
       new Animation(ctx);
     };
 
     loadImages();
+    return ()=>{
+      cancelAnimationFrame(animationId)
+    }
   }, []);
 
 
 
 
   return (
-    <div className="
-       w-full h-full flex justify-center
+    <section className="
+       w-full min-h-dvh flex justify-center
        items-center
       ">               
 
@@ -189,20 +197,20 @@ const Home = () => {
                   <FaLinkedin className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
-                    "/>
+                    " aria-label="Linkedin"/>
                 </a>
                 <a href="#" title="Github">
                   <FaGithubSquare className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
-                    "/>
+                    " aria-label="Github"/>
                 </a>
                 <a href="#" title="WhatsApp">
                   <FaWhatsappSquare className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg
                             duration-300 ease-in-out
-                        "/>
+                        " aria-label="WhatsApp"/>
                 </a>
               </div>
               
@@ -248,7 +256,7 @@ const Home = () => {
 
       </div>
 
-    </div>
+    </section>
   )
 }
 

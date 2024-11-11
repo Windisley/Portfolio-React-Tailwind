@@ -45,7 +45,7 @@ const Header = () => {
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="#">
+                        <a href="About">
 
                             sobre mim
                         </a>
