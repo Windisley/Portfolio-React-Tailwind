@@ -12,28 +12,40 @@ import { SiTypescript } from "react-icons/si";
 const Techs = ()=>{
     const carroselTechs = useRef()
     useEffect(()=>{
-     
-      console.log(carroselTechs.current)
+     let count = -1000
+      const carrosel = carroselTechs.current
+      setInterval(()=>{
+          count++
+          carrosel.style.transform = `translateX(${-count}px)`
+          
+          if(count > window.innerWidth){
+            carrosel.appendChild(carrosel.children[0])
+            count = -1000
+          }
+      }, 5)
+
 
     }, [])
     return(
         <section className="
           w-full min-h-full m-marginceltralize
+          bg-secundary
         ">
          <h3 className="
-           text-center my-4 capitalize font-poppins text-xl
+           text-center py-4 capitalize font-poppins text-xl
+           text-primary 
          ">
             habilidades
          </h3>
 
          <div className="
-           max-w-contain h-full flex justify-center
+           w-full h-full flex justify-center
            items-center overflow-hidden p-8 m-marginceltralize 
-           border
+           
          ">
             <div className="
-             w-full h-full border flex gap-4 relative 
-             p-8  justify-end items-center 
+             w-full h-full  flex gap-8 relative 
+             p-8  justify-end items-center  ease-out
             " ref={carroselTechs}>
          
             <div className="
