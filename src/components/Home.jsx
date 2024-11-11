@@ -169,6 +169,7 @@ const Home = () => {
           className="
               flex justify-between items-center w-full
              h-full max-w-contain  px-4 moba:flex-col desktopxl:flex-row
+             gap-4
              "
         >
           <div className="

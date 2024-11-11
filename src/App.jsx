@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Header from "./components/Header"
 import Home from "./components/Home"
+import Techs from "./components/Techs"
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
 
           <div className="w-full h-full">
             <About/> 
+          </div>
+
+          <div>
+            <Techs/>
           </div>
 
 
