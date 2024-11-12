@@ -74,6 +74,7 @@ const Techs = ()=>{
             ">
                 <FaHtml5 className="
                  text-5xl text-primary cursor-pointer
+                
                 "/>
                 <p className="
                     capitalize font-poppins text-center 
