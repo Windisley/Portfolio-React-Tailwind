@@ -6,16 +6,35 @@ import { RiMenu3Line } from "react-icons/ri";
 const Header = () => {
    const [activemenu, setActiveMenu] = useState(true)
     
+   const $nav = useRef()
+
    function Menu(){
      setActiveMenu( active=> !active)
     
    }
+
+   function responav(event){
+     if($nav.current && !$nav.current.contains(event.target)){
+       setActiveMenu(true)
+     }
+   
+    }
+    
+    useEffect(() => {
+      
+       document.addEventListener("mousedown", responav);
+
+    
+       return () => {
+           document.removeEventListener("mousedown", responav);
+       };
+   }, []);
     return (
         
 
         <header className="
         w-full  bg-secundary flex justify-center
-        fixed top-0 z-30
+        h-16 fixed top-0 z-30
         ">
             
             <div className=" w-full h-full py-8 max-w-contain flex items-center 
@@ -34,13 +53,13 @@ const Header = () => {
                     ${activemenu && window.innerWidth <= 700 ? "translate-x-full absolute top-20  right-0 hidden" : "left-0 flex"} 
                     flex gap-6 items-center bg-secundary 
                     `}
-                >
+                 ref={$nav}
+                 onClick={responav}>
                     <li className="
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="#">
-
+                        <a href="#home">
                             inicio
                         </a>
                     </li>
@@ -48,7 +67,7 @@ const Header = () => {
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="About">
+                        <a href="#about">
 
                             sobre mim
                         </a>
@@ -57,7 +76,7 @@ const Header = () => {
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="#">
+                        <a href="#tecnologias">
                             habilidades
 
                         </a>
@@ -66,7 +85,7 @@ const Header = () => {
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="#">
+                        <a href="#projetos">
                             projetos
                         </a>
                     </li>

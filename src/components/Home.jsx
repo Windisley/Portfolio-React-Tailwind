@@ -158,8 +158,8 @@ const Home = () => {
   return (
     <section className="
        w-full min-h-dvh flex justify-center
-       items-center
-      ">               
+       items-center my-10
+      " id="home">               
 
       <div className="
           w-full max-w-contain min-h-dvh
@@ -194,19 +194,19 @@ const Home = () => {
               <div className="
                        flex items-end gap-4 moba:justify-center desktopxl:justify-start
                       ">
-                <a href="#" title="Linkedin">
+                <a href="https://www.linkedin.com/in/windisley-lima-ab9447221/" target="blank" title="Linkedin">
                   <FaLinkedin className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
                     " aria-label="Linkedin"/>
                 </a>
-                <a href="#" title="Github">
+                <a href="https://github.com/Windisley" target="blank" title="Github">
                   <FaGithubSquare className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
                     " aria-label="Github"/>
                 </a>
-                <a href="#" title="WhatsApp">
+                <a href="https://wa.me/31995210110" target="_blank" title="WhatsApp">
                   <FaWhatsappSquare className="
                             text-4xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg

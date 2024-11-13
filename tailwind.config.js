@@ -34,6 +34,8 @@ export default {
       screens: {
         "moba": "300px",
 
+        "mobalg": "470px",
+
         'tablet': '600px',
   
         'desktop': '800px',

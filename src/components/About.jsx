@@ -5,7 +5,7 @@ const About = ()=>{
         <section className="
         w-full min-h-dvh flex justify-center
         items-center border-t border-text
-        ">
+        " id="about">
             <div className="
              max-w-contain h-full p-4 flex
              justify-between items-center gap-4
@@ -22,7 +22,7 @@ const About = ()=>{
                       translate-y-centralizeEixo
                       object-contain
                       w-full 
-                    "/>
+                    " loading="lazy"/>
                 </div>
                 <div className="
                  desktop:w-2/4 h-full flex flex-col gap-4 justify-center
@@ -37,9 +37,14 @@ const About = ()=>{
                     <p className="
                      text-left w-full font-poppins text-text capitalize
                     ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ducimus est, cupiditate 
-                        perspiciatis optio possimus corrupti recusandae perferendis odit doloremque fugiat aperiam deserunt! 
-                        Facere quis voluptate perferendis porro ea adipisci.
+                        Olá! Sou um desenvolvedor Front-end especializado em transformar 
+                        ideias em experiências digitais de alta qualidade. 
+                        <br /> <br />
+                        Com conhecimentos atualizados sobre as tecnologias e práticas modernas do mercado, ofereço soluções personalizadas para blogs, e-commerces, landing pages e muito mais.
+                        <br /> <br />
+                         Minha prioridade é criar interfaces intuitivas e visualmente atraentes, focando na melhor experiência para os usuários e no alinhamento com os objetivos do cliente.
+                         <br /><br /> 
+                        Vamos juntos tirar seu projeto do papel e construir algo incrível!
                     </p>
                 </div>
 

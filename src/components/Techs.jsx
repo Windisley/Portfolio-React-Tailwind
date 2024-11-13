@@ -16,7 +16,7 @@ const Techs = ()=>{
    useEffect(()=>{
     if(animationshow){
         const carrosel = carroselTechs.current
-        let count = -1400
+        let count = -1380
         
           let animationCarrosel = setInterval(()=>{
               count+=2
@@ -26,7 +26,7 @@ const Techs = ()=>{
                 const firstChild = carrosel.children[0].cloneNode(true);
                 carrosel.appendChild(firstChild);
                 carrosel.removeChild(carrosel.children[0]);
-                count = -1400
+                count = -1380
               } 
           }, 10)
 
@@ -48,7 +48,7 @@ const Techs = ()=>{
         <section className="
           w-full min-h-full m-marginceltralize
           bg-secundary
-        ">
+        " id="tecnologias">
          <h3 className="
            text-center py-4 capitalize font-poppins text-xl
            text-primary 
