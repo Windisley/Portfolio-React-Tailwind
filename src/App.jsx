@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Techs from "./components/Techs"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -28,12 +29,16 @@ function App() {
             <About/> 
           </div>
 
-          <div>
+          <div className="w-full h-full">
             <Techs/>
           </div>
 
-          <div>
+          <div className="w-full h-full">
             <Projects/>
+          </div>
+
+          <div className="w-full h-full">
+             <Footer/>
           </div>
 
 
