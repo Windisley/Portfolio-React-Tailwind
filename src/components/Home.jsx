@@ -163,7 +163,7 @@ const Home = () => {
 
       <div className="
           w-full max-w-contain min-h-dvh
-          flex justify-center items-center
+          flex justify-center items-center my-6
         ">
         <div
           className="

@@ -10,6 +10,12 @@ import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
 import calculadora from "../assets/imgs/calculadora.png"
 
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+
+
 
 const Projects = ()=>{
     
@@ -60,6 +66,46 @@ const Projects = ()=>{
         },
     ]
 
+    const carroselprojects = useRef()
+   
+    const [count, setCount] = useState(0)
+    useEffect(()=>{
+        const projects = carroselprojects.current
+        projects.style.transform = `translateX(${-100 * count}%)`
+
+       
+        
+    }, [count])
+
+    function Next(){
+        console.log(count)
+        setCount((nextcount)=>{
+            if(count >= imgsProjects1.length -1){
+              
+                
+               return nextcount
+            }
+
+            return nextcount +1 
+            
+        })
+
+    }
+
+    function Prev(){
+        console.log(count)
+
+        setCount((prevcount)=>{
+        if(prevcount <= 0){
+             
+        return 0
+    
+        }
+        return prevcount - 1
+
+        })
+    }
+    
     return(
         <section className="
          w-full min-h-dvh
@@ -72,60 +118,104 @@ const Projects = ()=>{
         </h4>
 
         <div className="
-         w-full max-w-contain min-h-full m-marginceltralize p-4
+         w-full max-w-contain min-h-full m-marginceltralize
         border my-4 flex items-center justify-center overflow-hidden
+        relative 
         ">
-            {/* {imgsProjects1.map(()=>(
-                
-            ))} */}
+            <div className=" border max-w-full h-full m-marginceltralize
+             flex  gap-4 p-2 translate-x-0 duration-500 ease-in-out
+            " ref={carroselprojects}>
+
+            {imgsProjects1.map((contain)=>(    
            <div className="
-            min-w-full h-full flex flex-col gap-8
-           ">
+            min-w-full h-full flex flex-col gap-8 justify-center
+            items-center grow 
+           " key={contain.id}>
                <div className="
                 w-full h-full flex flex-col items-center 
                 gap-2 justify-center
                ">
                    <div className="
-                    w-full h-full 
+                    max-w-full min-w-96 h-full
                    ">
-                       <img src={viacep} alt="img" className="
-                        object-cover object-center w-full
-                       "/>
+                       <img src={contain.img} alt={contain.text} className="
+                        object-cover object-center w-full h-full
+                       " loading="lazy"/>
                    </div>
                    <p className="
-                      text-left font-poppins capitalize text-lg text-text
+                    w-2/3  text-left font-poppins capitalize text-lg text-text
                    ">
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                     Ratione, dolores ex laborum repudiandae accusamus magni, 
-                     dicta alias praesentium, voluptas sunt mollitia fugit odit. 
-                     Reiciendis nisi accusantium odio sapiente commodi quam.
+                     {contain.text}
                    </p>
                </div>
 
                <div className="
-                 w-full h-full flex justify-between
+                 w-full h-full flex justify-between my-4 items-center
                ">
-                  <div>
-                      <FaArrowCircleLeft/>
-                      <FaArrowCircleRight/>
+                  <div className="
+                   max-w-full h-full py-4 px-8 bg-secundary rounded-lg
+                   flex gap-4 
+                  ">
+                      <FaArrowCircleLeft className="
+                       text-primary text-4xl cursor-pointer hover:text-primarydark
+                       duration-300 ease-in-out
+                      " onClick={Prev}/>
+                      <FaArrowCircleRight className="
+                       text-primary text-4xl cursor-pointer hover:text-primarydark
+                        duration-300 ease-in-out
+                      " onClick={Next}/>
                   </div>
-                  <div>
-                    <a href="#">
-                        <button>
+                  <div className="
+                    max-w-full h-full flex items-center justify-center
+                    gap-4
+                  ">
+                    <a href="#" className="
+                     max-w-full h-full
+                    ">
+                        <button className="
+                         max-w-80 capitalize font-poppins
+                         text-primary rounded-lg bg-secundary
+                         py-2 px-8 hover:shadow-shadowdark duration-300
+                         ease-in-out border border-primarydark
+                        ">
                             previa
                         </button>
                     </a>
-                    <a href="#">
-                        <button>
+                    <a href="#" className="
+                     max-w-full h-full
+                    ">
+                        <button className="
+                         max-w-80 capitalize font-poppins
+                         text-primary rounded-lg bg-secundary
+                         py-2 px-8 hover:shadow-shadowdark duration-300
+                         ease-in-out border border-primarydark
+                        ">
                             repositorio
                         </button>
                     </a>
                   </div>
-                  <div>
-                     <button>Techs</button>
+                  <div className="
+                   max-w-full h-full flex gap-4 items-center
+                   justify-center 
+                  ">
+                     <FaHtml5 className="
+                      text-3xl text-primary hover:text-primarydark
+                      duration-300 ease-in-out
+                     "/>
+                     <FaCss3Alt className="
+                      text-3xl text-primary hover:text-primarydark
+                      duration-300 ease-in-out
+                     "/>
+                     <FaJs className="
+                       text-3xl text-primary hover:text-primarydark
+                       duration-300 ease-in-out
+                     "/>
                   </div>
                </div>
            </div>
+            ))}
+
+            </div>
         </div>
 
         </section>
