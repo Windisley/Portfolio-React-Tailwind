@@ -37,12 +37,7 @@ function App() {
             <Projects/>
           </div>
 
-          <div className="w-full h-full">
              <Footer/>
-          </div>
-
-
-
 
          </main>
      </div>  
