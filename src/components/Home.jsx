@@ -220,13 +220,13 @@ const Home = () => {
                w-full flex moba:justify-center  items-center
                desktopxl:justify-start
                "> 
-              <a href="#" className="
+              <a href="https://github.com/Windisley/Curriculo-Front-End/raw/main/Front_End.pdf" className="
                 moba:w-64 tablet:w-80 desktopxl:w-80 bg-secundary text-primary py-2 
                   flex justify-center border-primarydark border rounded-lg
                   hover:shadow-shadowdark duration-300 ease-in-out 
                   text-center
                   
-              "  title="Curriculo" download={"file:///C:/Users/Windisley/Documents/curriculo/Front_End.pdf"}>
+              "title="Curriculo"  download="Curriculo_Windisley_Lima.pdf">
 
                 <button className="
                     

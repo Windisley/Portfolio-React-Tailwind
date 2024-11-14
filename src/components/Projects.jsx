@@ -12,12 +12,25 @@ import calculadora from "../assets/imgs/calculadora.png"
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
+import { DiJavascript } from "react-icons/di";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { GrReactjs } from "react-icons/gr";
+import { FaFigma } from "react-icons/fa";
+
+
 import { useEffect, useRef, useState } from "react";
 
 
 
 const Projects = ()=>{
+    const iconMap = {
+        html: <FaHtml5 className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
+        css: <FaCss3Alt className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
+        javascript: <DiJavascript className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
+        react: <GrReactjs className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
+        tailwind: <RiTailwindCssFill className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
+        figma: <FaFigma className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>
+      };
     
     const imgsProjects1 = [
         {
@@ -25,7 +38,8 @@ const Projects = ()=>{
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
             id: 1,
             github: "https://github.com/Windisley/Via-Cep",
-            previa: "",
+            previa: "https://via-cep-ten.vercel.app/",
+            techs: ["javascript", "react", "css",]
         },
         {
             img: tolist,
@@ -33,20 +47,23 @@ const Projects = ()=>{
             id: 2,
             github: "https://github.com/Windisley/To-Do-List-React",
             previa: "",
+            techs: ["javascript", "react", "tailwind",]
         },
         {
             img: pokeapi,
             text: "Este projeto integra a PokeAPI, uma API pública de dados Pokémon, para exibir informações detalhadas sobre diferentes Pokémon. O usuário pode procurar por um Pokémon específico pelo nome ou número, visualizando dados como tipos, habilidades, estatísticas e imagem. O projeto inclui uma interface intuitiva e responsiva, proporcionando uma navegação interativa.",
             id: 3,
             github: "https://github.com/Windisley/PokeApi",
-            previa: "",
+            previa: "https://poke-api-gold-sigma.vercel.app/",
+            techs: ["css", "javascript", "react",]
         },
         {
             img: facebook,
             text: "Clone da Página de Login do Facebook - Minha Versão Esse projeto consiste em uma recriação fiel da interface de login do Facebook, construída com precisão para simular a experiência original da página, mas com a minha versão personalizada. O projeto captura os elementos visuais e de usabilidade do login oficial do Facebook, adaptando o design com uma estrutura única e visual próprio. A ideia é destacar habilidades de layout, responsividade e atenção a detalhes, refletindo um domínio do Tailwind css, HTML, e React js no front-end.",
             id: 4,
             github: "https://github.com/Windisley/Login-Facebook",
-            previa: "",
+            previa: "https://login-facebook-alpha.vercel.app/",
+            techs: ["javascript", "react", "tailwind",]
         },
     
     ]
@@ -57,28 +74,32 @@ const Projects = ()=>{
             text: "Snake Game - Recriação Clássica com JavaScript Este projeto recria o clássico jogo Snake, no qual o jogador controla uma cobra que cresce conforme come frutas e evita colisões consigo mesma e com as bordas do tabuleiro. Desenvolvido com JavaScript, HTML5 e CSS, o jogo utiliza lógica baseada em grids, eventos de teclado e um loop de animação para o movimento contínuo da cobra.",
             id: 5,
             github: "https://github.com/Windisley/Game-Of-Snake",
-            previa: "",
+            previa: "https://guileless-shortbread-3187fa.netlify.app",
+            techs: ["html", "css", "javascript",]
         },
         {
             img: ecommerce,
             text: "Este projeto é uma plataforma de e-commerce focada na venda de relógios, desenvolvida com um front-end moderno. O site permite aos usuários explorar um catálogo detalhado de produtos, com descrições e imagens atraentes. A funcionalidade de carrinho possibilita adicionar e remover relógios, mantendo o controle dos itens desejados. Sem integração de pagamento, o foco é em proporcionar uma experiência de navegação fluida e intuitiva, simulando a dinâmica de um e-commerce real.",
             id: 6,
             github: "https://github.com/Windisley/E-commerce",
-            previa: "",
+            previa: "https://e-commerce-sigma-nine-35.vercel.app/",
+            techs: ["javascript", "react", "tailwind",]
         },
         {
             img: cronometro,
             text: "Projeto de cronômetro desenvolvido com React, permitindo iniciar, parar e resetar a contagem do tempo. Utiliza hooks como useState e useEffect para gerenciar o estado e garantir a atualização precisa do tempo em tela, oferecendo uma interface simples e funcional.",
             id: 7,
             github: "https://github.com/Windisley/Cronometro-React",
-            previa: "",
+            previa: "https://cronometro-react-pi.vercel.app/",
+            techs: ["css", "javascript", "react",]
         },
         {
             img: calculadora,
             text: "calculadora desenvolvido com React, capaz de realizar as operações matemáticas básicas como adição, subtração, multiplicação e divisão. A interface é interativa, permitindo ao usuário inserir números e operadores, com a funcionalidade de exibir o resultado das expressões em tempo real.",
             id: 8,
             github: "https://github.com/Windisley/Calculadora-React",
-            previa: "",
+            previa: "https://calculadora-react--ruddy.vercel.app/",
+            techs: ["javascript", "react", "tailwind",]
         },
     ]
 
@@ -266,25 +287,19 @@ const Projects = ()=>{
                 </div>
                   <div className="
                    max-w-full h-full flex gap-4 
-                  ">
-                     <FaHtml5 className="
-                      text-3xl text-primary hover:text-primarydark
-                      duration-300 ease-in-out
-                     "/>
-                     <FaCss3Alt className="
-                      text-3xl text-primary hover:text-primarydark
-                      duration-300 ease-in-out
-                     "/>
-                     <FaJs className="
-                       text-3xl text-primary hover:text-primarydark
-                       duration-300 ease-in-out
-                     "/>
+                  " key={contain.id}>
+                    {
+                        contain.techs.map((tech)=>(
+                           iconMap[tech]
+                        ))
+                    }
+                  
                   </div>
                </div>
            </div>
             ))}
-
             </div>
+
 
             </div>
             {/* outro cr */}
@@ -378,19 +393,12 @@ const Projects = ()=>{
                 </div>
                   <div className="
                    max-w-full h-full flex gap-4 
-                  ">
-                     <FaHtml5 className="
-                      text-3xl text-primary hover:text-primarydark
-                      duration-300 ease-in-out
-                     "/>
-                     <FaCss3Alt className="
-                      text-3xl text-primary hover:text-primarydark
-                      duration-300 ease-in-out
-                     "/>
-                     <FaJs className="
-                       text-3xl text-primary hover:text-primarydark
-                       duration-300 ease-in-out
-                     "/>
+                  " key={contain.id}>
+                     {
+                        contain.techs.map((tech)=>(
+                           iconMap[tech]
+                        ))
+                    }
                   </div>
                </div>
            </div>
