@@ -9,6 +9,7 @@ import gamesnake from "../assets/imgs/game_snake.png"
 import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
 import calculadora from "../assets/imgs/calculadora.png"
+import Homeimg from "../assets/imgs/Home.png";
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -34,20 +35,20 @@ const Projects = ()=>{
     
     const imgsProjects1 = [
         {
+            img: Homeimg,
+            text: `Este é o meu portfólio online, sou Windisley Lima Moreira, um desenvolvedor front-end especializado na criação de sites modernos e funcionais. Aqui, você encontrará uma variedade de projetos, como blogs, e-commerces e landing pages, que demonstram minhas habilidades e conhecimentos em tecnologias atuais.`,
+            id: 1,
+            github: "https://github.com/Windisley/Portfolio-React-Tailwind",
+            previa: "",
+            techs: ["javascript", "react", "tailwind", "figma"]
+        },
+        {
             img: viacep,
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
-            id: 1,
+            id: 2,
             github: "https://github.com/Windisley/Via-Cep",
             previa: "https://via-cep-ten.vercel.app/",
             techs: ["javascript", "react", "css",]
-        },
-        {
-            img: tolist,
-            text: " To-Do List permite que o usuário adicione e remova tarefas de maneira intuitiva, com uma interface organizada e funcional. Além disso, o projeto utiliza o localStorage para salvar as tarefas, garantindo que elas permaneçam disponíveis mesmo após a atualização ou fechamento da página, proporcionando uma experiência prática e contínua ao usuário.",
-            id: 2,
-            github: "https://github.com/Windisley/To-Do-List-React",
-            previa: "",
-            techs: ["javascript", "react", "tailwind",]
         },
         {
             img: pokeapi,
@@ -259,6 +260,7 @@ const Projects = ()=>{
                     max-w-contain h-full flex 
                     gap-4 
                   ">
+                    {contain.previa != "" &&
                     <a href={contain.previa} className="
                      max-w-full h-full flex justify-center items-center 
                     " target="blank">
@@ -271,6 +273,9 @@ const Projects = ()=>{
                             previa
                         </button>
                     </a>
+                    
+
+                    }
                     <a href={contain.github} className="
                      max-w-full h-full flex justify-center items-center
                     " target="blank">
