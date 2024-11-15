@@ -158,7 +158,7 @@ const Home = () => {
   return (
     <section className="
        w-full min-h-dvh flex justify-center
-       items-center my-10
+       items-center my-8
       " id="home">               
 
       <div className="

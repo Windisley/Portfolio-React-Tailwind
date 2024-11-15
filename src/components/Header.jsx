@@ -41,7 +41,7 @@ const Header = () => {
             justify-between px-4" >
             <p className="
              font-poppins uppercase text-primary cursor-pointer
-            ">
+            " onClick={()=>{window.scrollTo({top:0, behavior: "smooth"})}}>
                 windisley dev
             </p>
 

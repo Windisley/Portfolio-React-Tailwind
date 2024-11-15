@@ -31,14 +31,14 @@ const Footer = () => {
                          text-primary text-3xl hover:text-primarydark
                          hover:shadow-shadowligth border-transparent
                          duration-300 ease-in-out
-                        "/>
+                        " aria-label="Linkedin"/>
                     </a>
                     <a href="https://github.com/Windisley" target="blank">
                         <FaGithubSquare className="
                          text-primary text-3xl hover:text-primarydark
                          hover:shadow-shadowligth border-transparent
                          duration-300 ease-in-out
-                        "/>
+                        " aria-label="Github"/>
                     </a>
 
                     <a href="https://wa.me/31995210110" target="_blank">
@@ -46,7 +46,7 @@ const Footer = () => {
                          text-primary text-3xl hover:text-primarydark
                          hover:shadow-shadowligth border-transparent
                          duration-300 ease-in-out
-                        "/>
+                        " aria-label="WhatsApp"/>
                     </a>
                 </div>
 

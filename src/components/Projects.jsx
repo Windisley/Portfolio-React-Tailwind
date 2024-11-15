@@ -24,12 +24,12 @@ import { useEffect, useRef, useState } from "react";
 
 const Projects = ()=>{
     const iconMap = {
-        html: <FaHtml5 className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
-        css: <FaCss3Alt className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
-        javascript: <DiJavascript className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
-        react: <GrReactjs className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
-        tailwind: <RiTailwindCssFill className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>,
-        figma: <FaFigma className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out"/>
+        html: <FaHtml5 className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Html" aria-label="HTML"/>,
+        css: <FaCss3Alt className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Css" aria-label="CSS"/>,
+        javascript: <DiJavascript className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Javascript" aria-label="JAVASCRIPT"/>,
+        react: <GrReactjs className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="React js" aria-label="REACT JS"/>,
+        tailwind: <RiTailwindCssFill className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Tailwind Css" aria-label="TAILWIND CSS"/>,
+        figma: <FaFigma className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Figma" aria-label="FIGMA"/>
       };
     
     const imgsProjects1 = [
@@ -73,7 +73,7 @@ const Projects = ()=>{
             img: gamesnake,
             text: "Snake Game - Recriação Clássica com JavaScript Este projeto recria o clássico jogo Snake, no qual o jogador controla uma cobra que cresce conforme come frutas e evita colisões consigo mesma e com as bordas do tabuleiro. Desenvolvido com JavaScript, HTML5 e CSS, o jogo utiliza lógica baseada em grids, eventos de teclado e um loop de animação para o movimento contínuo da cobra.",
             id: 5,
-            github: "https://github.com/Windisley/Game-Of-Snake",
+            github: "https://github.com/Windisley/Game-Snake-2.0",
             previa: "https://guileless-shortbread-3187fa.netlify.app",
             techs: ["html", "css", "javascript",]
         },
@@ -298,6 +298,7 @@ const Projects = ()=>{
                </div>
            </div>
             ))}
+   
             </div>
 
 
