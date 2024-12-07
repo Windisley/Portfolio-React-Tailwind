@@ -2,9 +2,8 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 import viacep from "../assets/imgs/viacep.png"
-import tolist from "../assets/imgs/to-do-list.png"
+import landingpg from "../assets/imgs/Home_landing-page.png"
 import pokeapi from "../assets/imgs/pokeapi.png"
-import facebook from "../assets/imgs/login_facebook.png"
 import gamesnake from "../assets/imgs/game_snake.png"
 import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
@@ -43,9 +42,17 @@ const Projects = ()=>{
             techs: ["javascript", "react", "tailwind", "figma"]
         },
         {
+            img: landingpg,
+            text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
+            id: 2,
+            github: "https://github.com/Windisley/Landing-page-monitor",
+            previa: "https://monitor-gamer-sansung-t350.com.br/",
+            techs: ["javascript", "tipescript", "tailwind",]
+        },
+        {
             img: viacep,
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
-            id: 2,
+            id: 3,
             github: "https://github.com/Windisley/Via-Cep",
             previa: "https://via-cep-ten.vercel.app/",
             techs: ["javascript", "react", "css",]
@@ -53,18 +60,10 @@ const Projects = ()=>{
         {
             img: pokeapi,
             text: "Este projeto integra a PokeAPI, uma API pública de dados Pokémon, para exibir informações detalhadas sobre diferentes Pokémon. O usuário pode procurar por um Pokémon específico pelo nome ou número, visualizando dados como tipos, habilidades, estatísticas e imagem. O projeto inclui uma interface intuitiva e responsiva, proporcionando uma navegação interativa.",
-            id: 3,
+            id: 4,
             github: "https://github.com/Windisley/PokeApi",
             previa: "https://poke-api-gold-sigma.vercel.app/",
             techs: ["css", "javascript", "react",]
-        },
-        {
-            img: facebook,
-            text: "Clone da Página de Login do Facebook - Minha Versão Esse projeto consiste em uma recriação fiel da interface de login do Facebook, construída com precisão para simular a experiência original da página, mas com a minha versão personalizada. O projeto captura os elementos visuais e de usabilidade do login oficial do Facebook, adaptando o design com uma estrutura única e visual próprio. A ideia é destacar habilidades de layout, responsividade e atenção a detalhes, refletindo um domínio do Tailwind css, HTML, e React js no front-end.",
-            id: 4,
-            github: "https://github.com/Windisley/Login-Facebook",
-            previa: "https://login-facebook-alpha.vercel.app/",
-            techs: ["javascript", "react", "tailwind",]
         },
     
     ]
