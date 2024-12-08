@@ -48,7 +48,7 @@ const Projects = ()=>{
             id: 2,
             github: "https://github.com/Windisley/Landing-page-monitor",
             previa: "https://monitor-gamer-sansung-t350.com.br/",
-            techs: ["javascript", "tipescript", "tailwind",]
+            techs: ["html","javascript", "tipescript", "tailwind",]
         },
         {
             img: viacep,
