@@ -16,7 +16,7 @@ import { DiJavascript } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrReactjs } from "react-icons/gr";
 import { FaFigma } from "react-icons/fa";
-
+import { SiTypescript } from "react-icons/si";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -29,7 +29,8 @@ const Projects = ()=>{
         javascript: <DiJavascript className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Javascript" aria-label="JAVASCRIPT"/>,
         react: <GrReactjs className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="React js" aria-label="REACT JS"/>,
         tailwind: <RiTailwindCssFill className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Tailwind Css" aria-label="TAILWIND CSS"/>,
-        figma: <FaFigma className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Figma" aria-label="FIGMA"/>
+        figma: <FaFigma className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="Figma" aria-label="FIGMA"/>,
+        typescript: <SiTypescript className="text-3xl text-primary hover:text-primarydark duration-300 ease-in-out" title="TYPESCRIPT" aria-label="TYPESCRIPT"/>
       };
     
     const imgsProjects1 = [
