@@ -179,7 +179,7 @@ const Home = () => {
                        font-poppins-semibold text-2xl 
                         text-text moba:text-center desktopxl:text-start
                    ">
-              Windiley Lima Desenvolvedor Front end
+              Windisley Lima Desenvolvedor Front end
             </h1>
 
             <div className="
