@@ -9,6 +9,7 @@ import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
 import calculadora from "../assets/imgs/calculadora.png"
 import Homeimg from "../assets/imgs/Home.png";
+import mondial from "../assets/imgs/Home_mondial.png"
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -51,9 +52,17 @@ const Projects = ()=>{
             techs: ["html","javascript", "tipescript", "tailwind",]
         },
         {
+            img: mondial,
+            text: "Este projeto é uma landing page desenvolvida para promover o Super Groom 10, um aparador de pelos multifuncional da Mondial. A página foi projetada para destacar os benefícios, funcionalidades e a garantia do produto, oferecendo uma experiência visual moderna e interativa.",
+            id: 3,
+            github: "https://github.com/Windisley/Laging-Page-Mondial",
+            previa: "https://www.aparadormondial.com.br/",
+            techs: ["react","javascript", "tipescript", "tailwind",]
+        },
+        {
             img: viacep,
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
-            id: 3,
+            id: 4,
             github: "https://github.com/Windisley/Via-Cep",
             previa: "https://via-cep-ten.vercel.app/",
             techs: ["javascript", "react", "css",]
@@ -61,7 +70,7 @@ const Projects = ()=>{
         {
             img: pokeapi,
             text: "Este projeto integra a PokeAPI, uma API pública de dados Pokémon, para exibir informações detalhadas sobre diferentes Pokémon. O usuário pode procurar por um Pokémon específico pelo nome ou número, visualizando dados como tipos, habilidades, estatísticas e imagem. O projeto inclui uma interface intuitiva e responsiva, proporcionando uma navegação interativa.",
-            id: 4,
+            id: 5,
             github: "https://github.com/Windisley/PokeApi",
             previa: "https://poke-api-gold-sigma.vercel.app/",
             techs: ["css", "javascript", "react",]
@@ -73,7 +82,7 @@ const Projects = ()=>{
         {
             img: gamesnake,
             text: "Snake Game - Recriação Clássica com JavaScript Este projeto recria o clássico jogo Snake, no qual o jogador controla uma cobra que cresce conforme come frutas e evita colisões consigo mesma e com as bordas do tabuleiro. Desenvolvido com JavaScript, HTML5 e CSS, o jogo utiliza lógica baseada em grids, eventos de teclado e um loop de animação para o movimento contínuo da cobra.",
-            id: 5,
+            id: 6,
             github: "https://github.com/Windisley/Game-Snake-2.0",
             previa: "https://guileless-shortbread-3187fa.netlify.app",
             techs: ["html", "css", "javascript",]
@@ -81,7 +90,7 @@ const Projects = ()=>{
         {
             img: ecommerce,
             text: "Este projeto é uma plataforma de e-commerce focada na venda de relógios, desenvolvida com um front-end moderno. O site permite aos usuários explorar um catálogo detalhado de produtos, com descrições e imagens atraentes. A funcionalidade de carrinho possibilita adicionar e remover relógios, mantendo o controle dos itens desejados. Sem integração de pagamento, o foco é em proporcionar uma experiência de navegação fluida e intuitiva, simulando a dinâmica de um e-commerce real.",
-            id: 6,
+            id: 7,
             github: "https://github.com/Windisley/E-commerce",
             previa: "https://e-commerce-sigma-nine-35.vercel.app/",
             techs: ["javascript", "react", "tailwind",]
@@ -89,7 +98,7 @@ const Projects = ()=>{
         {
             img: cronometro,
             text: "Projeto de cronômetro desenvolvido com React, permitindo iniciar, parar e resetar a contagem do tempo. Utiliza hooks como useState e useEffect para gerenciar o estado e garantir a atualização precisa do tempo em tela, oferecendo uma interface simples e funcional.",
-            id: 7,
+            id: 8,
             github: "https://github.com/Windisley/Cronometro-React",
             previa: "https://cronometro-react-pi.vercel.app/",
             techs: ["css", "javascript", "react",]
@@ -97,7 +106,7 @@ const Projects = ()=>{
         {
             img: calculadora,
             text: "calculadora desenvolvido com React, capaz de realizar as operações matemáticas básicas como adição, subtração, multiplicação e divisão. A interface é interativa, permitindo ao usuário inserir números e operadores, com a funcionalidade de exibir o resultado das expressões em tempo real.",
-            id: 8,
+            id: 9,
             github: "https://github.com/Windisley/Calculadora-React",
             previa: "https://calculadora-react--ruddy.vercel.app/",
             techs: ["javascript", "react", "tailwind",]
