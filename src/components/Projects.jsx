@@ -3,13 +3,13 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 import viacep from "../assets/imgs/viacep.png"
 import landingpg from "../assets/imgs/Home_landing-page.png"
-import pokeapi from "../assets/imgs/pokeapi.png"
 import gamesnake from "../assets/imgs/game_snake.png"
 import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
 import calculadora from "../assets/imgs/calculadora.png"
 import Homeimg from "../assets/imgs/Home.png";
 import mondial from "../assets/imgs/Home_mondial.png"
+import wmacabamentos from "../assets/imgs/wmhome.png"
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -35,10 +35,21 @@ const Projects = ()=>{
       };
     
     const imgsProjects1 = [
+        
+        {
+            img: wmacabamentos,
+            text: "Este projeto é um site desenvolvido para a empresa WM Acabamentos, especializada na fabricação de móveis planejados, assentamento de portas, empalhamento de cadeiras e outros serviços de marcenaria.",
+            id: 1,
+            github: "https://github.com/Windisley/WM-Acabamentos",
+            previa: "https://wmacabamentosmoveis.com.br/#inicio",
+            techs: ["html","tailwind", "javascript", "figma",]
+        },
+        
+        
         {
             img: Homeimg,
             text: `Este é o meu portfólio online, sou Windisley Lima Moreira, um desenvolvedor front-end especializado na criação de sites modernos e funcionais. Aqui, você encontrará uma variedade de projetos, como blogs, e-commerces e landing pages, que demonstram minhas habilidades e conhecimentos em tecnologias atuais.`,
-            id: 1,
+            id: 2,
             github: "https://github.com/Windisley/Portfolio-React-Tailwind",
             previa: "",
             techs: ["javascript", "react", "tailwind", "figma"]
@@ -46,7 +57,7 @@ const Projects = ()=>{
         {
             img: landingpg,
             text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
-            id: 2,
+            id: 3,
             github: "https://github.com/Windisley/Landing-page-monitor",
             previa: "https://monitor-gamer-sansung-t350.com.br/",
             techs: ["html","javascript", "tipescript", "tailwind",]
@@ -54,7 +65,7 @@ const Projects = ()=>{
         {
             img: mondial,
             text: "Este projeto é uma landing page desenvolvida para promover o Super Groom 10, um aparador de pelos multifuncional da Mondial. A página foi projetada para destacar os benefícios, funcionalidades e a garantia do produto, oferecendo uma experiência visual moderna e interativa.",
-            id: 3,
+            id: 4,
             github: "https://github.com/Windisley/Laging-Page-Mondial",
             previa: "https://www.aparadormondial.com.br/",
             techs: ["react","javascript", "tipescript", "tailwind",]
@@ -62,18 +73,10 @@ const Projects = ()=>{
         {
             img: viacep,
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
-            id: 4,
+            id: 5,
             github: "https://github.com/Windisley/Via-Cep",
             previa: "https://via-cep-ten.vercel.app/",
             techs: ["javascript", "react", "css",]
-        },
-        {
-            img: pokeapi,
-            text: "Este projeto integra a PokeAPI, uma API pública de dados Pokémon, para exibir informações detalhadas sobre diferentes Pokémon. O usuário pode procurar por um Pokémon específico pelo nome ou número, visualizando dados como tipos, habilidades, estatísticas e imagem. O projeto inclui uma interface intuitiva e responsiva, proporcionando uma navegação interativa.",
-            id: 5,
-            github: "https://github.com/Windisley/PokeApi",
-            previa: "https://poke-api-gold-sigma.vercel.app/",
-            techs: ["css", "javascript", "react",]
         },
     
     ]
@@ -279,7 +282,7 @@ const Projects = ()=>{
                          py-2 px-8 hover:shadow-shadowdark duration-300
                          ease-in-out border border-primarydark
                         ">
-                            previa
+                            Site
                         </button>
                     </a>
                     
