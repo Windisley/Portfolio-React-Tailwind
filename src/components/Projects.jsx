@@ -392,7 +392,7 @@ const Projects = ()=>{
                          py-2 px-8 hover:shadow-shadowdark duration-300
                          ease-in-out border border-primarydark
                         ">
-                            previa
+                            Site
                         </button>
                     </a>
                     <a href={contain.github} className="
