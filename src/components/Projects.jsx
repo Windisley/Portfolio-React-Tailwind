@@ -35,25 +35,25 @@ const Projects = ()=>{
       };
     
     const imgsProjects1 = [
+        {
+            img: Homeimg,
+            text: `Este é o meu portfólio online, sou Windisley Lima Moreira, um desenvolvedor front-end especializado na criação de sites modernos e funcionais. Aqui, você encontrará uma variedade de projetos, como blogs, e-commerces e landing pages, que demonstram minhas habilidades e conhecimentos em tecnologias atuais.`,
+            id: 1,
+            github: "https://github.com/Windisley/Portfolio-React-Tailwind",
+            previa: "",
+            techs: ["javascript", "react", "tailwind", "figma"]
+        },
         
         {
             img: wmacabamentos,
             text: "Este projeto é um site desenvolvido para a empresa WM Acabamentos, especializada na fabricação de móveis planejados, assentamento de portas, empalhamento de cadeiras e outros serviços de marcenaria.",
-            id: 1,
+            id: 2,
             github: "https://github.com/Windisley/WM-Acabamentos",
             previa: "https://wmacabamentosmoveis.com.br/#inicio",
             techs: ["html","tailwind", "javascript", "figma",]
         },
         
         
-        {
-            img: Homeimg,
-            text: `Este é o meu portfólio online, sou Windisley Lima Moreira, um desenvolvedor front-end especializado na criação de sites modernos e funcionais. Aqui, você encontrará uma variedade de projetos, como blogs, e-commerces e landing pages, que demonstram minhas habilidades e conhecimentos em tecnologias atuais.`,
-            id: 2,
-            github: "https://github.com/Windisley/Portfolio-React-Tailwind",
-            previa: "",
-            techs: ["javascript", "react", "tailwind", "figma"]
-        },
         {
             img: landingpg,
             text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
