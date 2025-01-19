@@ -55,21 +55,24 @@ const Projects = ()=>{
         
         
         {
-            img: landingpg,
-            text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
-            id: 3,
-            github: "https://github.com/Windisley/Landing-page-monitor",
-            previa: "https://monitor-gamer-sansung-t350.com.br/",
-            techs: ["html","javascript", "tipescript", "tailwind",]
-        },
-        {
             img: mondial,
             text: "Este projeto é uma landing page desenvolvida para promover o Super Groom 10, um aparador de pelos multifuncional da Mondial. A página foi projetada para destacar os benefícios, funcionalidades e a garantia do produto, oferecendo uma experiência visual moderna e interativa.",
-            id: 4,
+            id: 3,
             github: "https://github.com/Windisley/Laging-Page-Mondial",
             previa: "https://www.aparadormondial.com.br/",
             techs: ["react","javascript", "tipescript", "tailwind",]
         },
+        
+        {
+            img: landingpg,
+            text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
+            id: 4,
+            github: "https://github.com/Windisley/Landing-page-monitor",
+            previa: "https://monitor-gamer-sansung-t350.com.br/",
+            techs: ["html","javascript", "tipescript", "tailwind",]
+        },
+
+
         {
             img: viacep,
             text: `ViaCEP é uma aplicação que busca informações de endereços no Brasil a partir de um CEP informado.\nUsando a API pública do ViaCEP, ele retorna dados como rua, bairro, cidade e estado, simplificando o preenchimento de formulários de endereço e proporcionando uma experiência de usuário mais rápida e automatizada.`,
@@ -234,7 +237,7 @@ const Projects = ()=>{
                    ">
                        <img src={contain.img} alt={contain.text} className="
                         object-contain object-center w-full h-full 
-                        border border-gray min-h-80 
+                 
                        " loading="lazy"/>
                    </div>
                    <p className="
@@ -345,7 +348,7 @@ const Projects = ()=>{
                    ">
                        <img src={contain.img} alt={contain.text} className="
                         object-contain object-center w-full h-full 
-                        border border-gray min-h-80 
+                        
                        " loading="lazy"/>
                    </div>
                    <p className="
