@@ -40,7 +40,7 @@ const About = ()=>{
                         Olá! Sou um desenvolvedor Front-end especializado em transformar 
                         ideias em experiências digitais de alta qualidade. 
                         <br /> <br />
-                        Com conhecimentos atualizados sobre as tecnologias e práticas modernas do mercado, ofereço soluções personalizadas para blogs, e-commerces, landing pages e muito mais.
+                        Com conhecimentos atualizados sobre as tecnologias e práticas modernas do mercado, ofereço soluções personalizadas para <strong>blogs, e-commerces, landing pages</strong> e muito mais.
                         <br /> <br />
                          Minha prioridade é criar interfaces intuitivas e visualmente atraentes, focando na melhor experiência para os usuários e no alinhamento com os objetivos do cliente.
                          <br /><br /> 
