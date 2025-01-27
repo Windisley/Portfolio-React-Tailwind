@@ -2,7 +2,8 @@ import { useRef, useEffect } from "react";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaWhatsappSquare } from "react-icons/fa";
+// import { FaWhatsappSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import bookImg from "../assets/imgs/book.png"
 import computerImg from "../assets/imgs/computer.png"
 import spriteHuman from "../assets/imgs/sprites_human.png"
@@ -158,13 +159,28 @@ const Home = () => {
   return (
     <section className="
        w-full min-h-dvh flex justify-center
-       items-center my-8
-      " id="home">               
+       items-center my-8 relative
+      " id="home">
+
+
+      <div className="
+       fixed right-2 bottom-2 z-50 
+      ">
+        <a href="https://wa.me/5531995210110" target="blank_">
+          <FaWhatsapp className="
+           text-primary text-5xl
+            hover:text-black
+           ease-in-out duration-300
+          "/>
+        </a>
+      </div>              
 
       <div className="
           w-full max-w-contain min-h-dvh
-          flex justify-center items-center my-6
-        ">
+          flex justify-center items-center moba:my-6
+          desktop:my-0
+          m-[0 auto] relative
+          ">
         <div
           className="
               flex justify-between items-center w-full
@@ -173,52 +189,88 @@ const Home = () => {
              "
         >
           <div className="
-                 flex flex-col gap-8
+                 flex flex-col gap-6
+                 justify-center items-center
                 ">
+            
+            <div className="
+             w-full h-full flex justify-center
+             flex-col gap-2
+             moba:items-center desktopxl:items-start
+             
+            ">
+             
+             <div className="
+             moba:w-full desktopxl:w-4/5 flex items-center
+             moba:justify-center desktopxl:justify-start
+             ">
+             <p className="
+              text-left capitalize
+              font-poppins-semibold
+              text-text 
+             ">
+             windisley dev
+             </p>
+
+             </div>
+            
+            <div className="
+             moba:w-full tablet700:w-4/5 flex items-center
+             moba:justify-center desktopxl:justify-left
+            ">
             <h1 className="
                        font-poppins-semibold text-2xl 
-                        text-text moba:text-center desktopxl:text-start
+                        text-text desktopxl:text-left
+                        moba:text-center
+                        uppercase
                    ">
-              Windisley Lima Desenvolvedor Front end
+              Aumente suas conversões com uma landing page profissional
             </h1>
+
+            </div>
+            
+            <div className="
+             moba:w-full desktopxl:w-4/5 flex items-center
+             moba:justify-center desktopxl:justify-start
+            ">
+            <p className="
+              text-center capitalize
+             font-poppins-semibold
+             text-text 
+            ">
+            faço landing pages de alta conversão 
+            </p>
+
+            </div>
+            </div>
 
             <div className="
                       flex flex-col gap-4 w-full 
                    ">
-              <p className="
-                         text-xl capitalize text-text moba:text-center desktopxl:text-start
-                      ">
-                vamos conversar?
-              </p>
+       
 
               <div className="
                        flex items-end gap-4 moba:justify-center desktopxl:justify-start
                       ">
                 <a href="https://www.linkedin.com/in/windisley-lima-ab9447221/" target="blank" title="Linkedin">
                   <FaLinkedin className="
-                            text-4xl text-secundary hover:shadow-shadowdark
+                            text-5xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
                     " aria-label="Linkedin"/>
                 </a>
                 <a href="https://github.com/Windisley" target="blank" title="Github">
                   <FaGithubSquare className="
-                            text-4xl text-secundary hover:shadow-shadowdark
+                            text-5xl text-secundary hover:shadow-shadowdark
                             border border-transparent rounded-lg duration-300 ease-in-out
                     " aria-label="Github"/>
                 </a>
-                <a href="https://wa.me/31995210110" target="_blank" title="WhatsApp">
-                  <FaWhatsappSquare className="
-                            text-4xl text-secundary hover:shadow-shadowdark
-                            border border-transparent rounded-lg
-                            duration-300 ease-in-out
-                        " aria-label="WhatsApp"/>
-                </a>
+                
               </div>
               
 
                <div className="
-               w-full flex moba:justify-center  items-center
-               desktopxl:justify-start
+               w-full flex flex-col moba:justify-center  items-center
+               desktopxl:items-start gap-4
                "> 
               <a href="https://github.com/Windisley/Curriculo-Front-End/raw/main/Front_End.pdf" className="
                 moba:w-64 tablet:w-80 desktopxl:w-80 bg-secundary text-primary py-2 
@@ -234,7 +286,32 @@ const Home = () => {
 
                   Baixar CV
 
+
                 </button>
+
+                
+              </a>
+
+              <a href="https://wa.me/5531995210110" target="blank_" className="
+                moba:w-64 tablet:w-80 desktopxl:w-80  text-primary py-2 
+                  flex justify-center border-primary border rounded-lg
+                  hover:shadow-shadowdark bg-secundary duration-300 ease-in-out 
+                  text-center relative
+                  
+              "title="Whatsapp">
+
+                <button className="
+                    
+                 ">
+
+                  Fazer Orçamento
+
+                </button>
+
+                <FaWhatsapp className="
+                 text-primary text-2xl absolute
+                 right-2
+                "/>
               </a>
 
                </div>
@@ -245,7 +322,7 @@ const Home = () => {
 
           <div className="
            moba:w-full desktopxl:w-2/4 min-h-96 p-4  flex
-           items-center justify-center flex-col
+           items-center justify-center flex-col 
           " ref={boxCanvas }>
             <canvas ref={Canvas} className="border bg-gray rounded-lg">
               <h1>
@@ -253,6 +330,7 @@ const Home = () => {
               </h1>
             </canvas>
           </div>
+
         </div>
 
       </div>

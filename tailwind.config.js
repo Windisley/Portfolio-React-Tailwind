@@ -38,6 +38,8 @@ export default {
 
         'tablet': '600px',
   
+        "tablet700":  '700px',
+
         'desktop': '800px',
   
         'desktopxl': '1160px',
@@ -48,7 +50,7 @@ export default {
         shadowdark: " 0 0 10px 0 #EDB816, 0px 0px 5px 0 #F5D575;"
       },
       dropShadow:{
-         shadowligth: "0px 0px 12px 0 #F5D575",
+         shadowligth: "0px 0px 10px 0 #F5D575",
          shadowdark: " 0 0 10px 0 #EDB816, 0px 0px 5px 0 #F5D575;"
       },
       margin:{

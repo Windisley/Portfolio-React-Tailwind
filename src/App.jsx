@@ -29,6 +29,7 @@ function App() {
             <About/> 
           </div>
 
+
           <div className="w-full h-full">
             <Techs/>
           </div>

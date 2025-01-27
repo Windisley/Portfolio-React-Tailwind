@@ -2,7 +2,6 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 
 import viacep from "../assets/imgs/viacep.png"
-import landingpg from "../assets/imgs/Home_landing-page.png"
 import gamesnake from "../assets/imgs/game_snake.png"
 import ecommerce from "../assets/imgs/Ecommerce.png"
 import cronometro from "../assets/imgs/cronometro.png"
@@ -10,6 +9,7 @@ import calculadora from "../assets/imgs/calculadora.png"
 import Homeimg from "../assets/imgs/Home.png";
 import mondial from "../assets/imgs/Home_mondial.png"
 import wmacabamentos from "../assets/imgs/wmhome.png"
+import Barberize from "../assets/imgs/barberizeone.png"
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -64,12 +64,12 @@ const Projects = ()=>{
         },
         
         {
-            img: landingpg,
-            text: "Desenvolvi uma landing page otimizada para divulgar o monitor gamer Samsung T350, com foco em acessibilidade, SEO e experiência do usuário, garantindo uma navegação intuitiva e eficaz na conversão de clientes.",
+            img: Barberize,
+            text: "Barberize é uma landing page de uma barbearia, oferecendo cortes de cabelo modernos e estilosos para homens. O site apresenta os serviços da barbearia, proporcionando uma experiência de navegação agradável com animações, transições suaves e um design responsivo que se adapta a diferentes tamanhos de tela.",
             id: 4,
-            github: "https://github.com/Windisley/Landing-page-monitor",
-            previa: "https://monitor-gamer-sansung-t350.com.br/",
-            techs: ["html","javascript", "tipescript", "tailwind",]
+            github: "https://github.com/Windisley/Barberize",
+            previa: "https://barberize.netlify.app/",
+            techs: ["html", "css" ,"javascript"]
         },
 
 
@@ -205,12 +205,12 @@ const Projects = ()=>{
         <section className="
          w-full min-h-dvh
         " id="projetos">   
-        <h4 className="
+        <h5 className="
          text-center py-4 text-2xl font-poppins-semibold text-text
-         capitalize
+         uppercase
         ">
             projetos
-        </h4>
+        </h5>
 
         <div className="
          w-full max-w-contain min-h-full m-marginceltralize

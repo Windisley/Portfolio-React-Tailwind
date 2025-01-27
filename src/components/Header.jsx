@@ -72,6 +72,7 @@ const Header = () => {
                             sobre mim
                         </a>
                     </li>
+                 
                     <li className="
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out

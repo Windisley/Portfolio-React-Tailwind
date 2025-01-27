@@ -49,12 +49,12 @@ const Techs = ()=>{
           w-full min-h-full m-marginceltralize
           bg-secundary
         " id="tecnologias">
-         <h3 className="
-           text-center py-4 capitalize font-poppins text-xl
+         <h4 className="
+           text-center py-4 capitalize font-poppins text-2xl
            text-primary 
          ">
             habilidades
-         </h3>
+         </h4>
 
          <div className="
            w-full h-full flex justify-center
