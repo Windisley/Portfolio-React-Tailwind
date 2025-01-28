@@ -14,6 +14,8 @@ const Home = () => {
   let angle = 0
 
   useEffect(() => {
+    
+  
     const canvas = Canvas.current;
     const containCanvas = boxCanvas.current;
     const ctx = canvas.getContext("2d");
@@ -159,7 +161,7 @@ const Home = () => {
   return (
     <section className="
        w-full min-h-dvh flex justify-center
-       items-center my-8 relative
+       items-center my-8 relative overflow-hidden
       " id="home">
 
 
