@@ -179,7 +179,7 @@ const Home = () => {
 
       <div className="
           w-full max-w-contain min-h-dvh
-          flex justify-center items-center moba:my-6
+          flex justify-center items-center moba:my-8
           desktop:my-0
           m-[0 auto] relative
           ">
