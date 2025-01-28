@@ -36,7 +36,7 @@ const Header = () => {
         w-full  bg-secundary flex justify-center
         h-16 fixed top-0 z-30
         ">
-            
+            64+32
             <div className=" w-full h-full py-8 max-w-contain flex items-center 
             justify-between px-4" >
             <p className="

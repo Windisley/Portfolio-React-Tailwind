@@ -161,7 +161,7 @@ const Home = () => {
   return (
     <section className="
        w-full min-h-dvh flex justify-center
-       items-center my-8 relative overflow-hidden
+       items-center my-[96px] relative overflow-hidden
       " id="home">
 
 
