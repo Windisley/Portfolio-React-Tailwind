@@ -9,7 +9,7 @@ const About = ()=>{
     return(
         <section className="
         w-full min-h-dvh flex justify-center
-        items-center border-t border-dashed border-text
+        items-center border-text
         " id="about">
             <div className="
              max-w-contain h-full p-4 flex

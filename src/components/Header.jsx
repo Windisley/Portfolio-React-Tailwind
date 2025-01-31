@@ -62,15 +62,14 @@ const Header = () => {
                             inicio
                         </a>
                     </li>
-                    <li className="
-                     text-primary capitalize font-poppins
-                     hover:translate-y-y5  duration-300 ease-out
-                    ">
-                        <a href="#about">
-
-                            sobre mim
-                        </a>
-                    </li>
+                            <li className="
+                             text-primary capitalize font-poppins
+                             hover:translate-y-y5  duration-300 ease-out
+                            ">
+                                <a href="#projetos">
+                                    projetos
+                                </a>
+                            </li>
                  
                     <li className="
                      text-primary capitalize font-poppins
@@ -85,8 +84,9 @@ const Header = () => {
                      text-primary capitalize font-poppins
                      hover:translate-y-y5  duration-300 ease-out
                     ">
-                        <a href="#projetos">
-                            projetos
+                        <a href="#about">
+
+                            sobre mim
                         </a>
                     </li>
                 </ul>

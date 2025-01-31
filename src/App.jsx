@@ -24,18 +24,16 @@ function App() {
           <div className="w-full h-full">
            <Home/>
           </div>
-
           <div className="w-full h-full">
-            <About/> 
+            <Projects/>
           </div>
-
 
           <div className="w-full h-full">
             <Techs/>
           </div>
 
           <div className="w-full h-full">
-            <Projects/>
+            <About/> 
           </div>
 
              <Footer/>

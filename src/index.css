@@ -38,3 +38,33 @@
   font-display: swap;
 }
 
+
+section .line-top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+section .line-top div{
+  width: 0%;
+  height: 2px;
+  background-color: #faca52;
+  animation: line-animation 3s infinite linear;
+  
+}
+
+@keyframes line-animation{
+  from{
+    width: 0%;
+  }
+
+  to{
+    width: 100%;
+  }
+}
+
+
+

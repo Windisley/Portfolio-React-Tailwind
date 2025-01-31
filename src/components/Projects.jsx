@@ -203,8 +203,19 @@ const Projects = ()=>{
     
     return(
         <section className="
-         w-full min-h-dvh
-        " id="projetos">   
+         w-full min-h-dvh relative
+         
+        " id="projetos">
+
+        <div className="
+           line-top
+        ">
+            <div>
+                
+            </div>    
+        </div> 
+         
+
         <h5 className="
          text-center py-4 text-2xl font-poppins-semibold text-text
          uppercase
