@@ -202,19 +202,9 @@ const Home = () => {
              
             ">
              
-             <div className="
-             moba:w-full desktopxl:w-4/5 flex items-center
-             moba:justify-center desktopxl:justify-start
-             ">
-             <p className="
-              text-left capitalize
-              font-poppins-semibold
-              text-text 
-             ">
-             windisley dev
-             </p>
+          
 
-             </div>
+          
             
             <div className="
              moba:w-full tablet700:w-4/5 flex items-center
@@ -242,6 +232,8 @@ const Home = () => {
             ">
             faço landing pages de alta conversão 
             </p>
+
+  
 
             </div>
             </div>
